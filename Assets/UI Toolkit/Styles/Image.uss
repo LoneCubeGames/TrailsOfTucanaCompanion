@@ -1,0 +1,171 @@
+.none {
+    background-image: var(--image-terrain-cards-none);
+}
+
+.desert {
+    background-image: var(--image-terrain-cards-desert);
+}
+
+.forest {
+    background-image: var(--image-terrain-cards-forest);
+}
+
+.mountain {
+    background-image: var(--image-terrain-cards-mountain);
+}
+
+.water {
+    background-image: var(--image-terrain-cards-water);
+}
+
+.any {
+    background-image: var(--image-terrain-cards-any);
+}
+
+.desert-preview {
+    background-image: var(--icon-desert-preview);
+}
+
+.forest-preview {
+    background-image: var(--icon-forest-preview);
+}
+
+.mountain-preview {
+    background-image: var(--icon-mountain-preview);
+}
+
+.water-preview {
+    background-image: var(--icon-water-preview);
+}
+
+.any-preview {
+    background-image: var(--icon-any-preview);
+}
+
+.village_0 {
+    background-image: var(--image-village_0);
+}
+
+.village_1 {
+    background-image: var(--image-village_1);
+}
+
+.village_2 {
+    background-image: var(--image-village_2);
+}
+
+.village_3 {
+    background-image: var(--image-village_3);
+}
+
+.village_4 {
+    background-image: var(--image-village_4);
+}
+
+.village_5 {
+    background-image: var(--image-village_5);
+}
+
+.village_6 {
+    background-image: var(--image-village_6);
+}
+
+.village_7 {
+    background-image: var(--image-village_7);
+}
+
+.village_8 {
+    background-image: var(--image-village_8);
+}
+
+.village_9 {
+    background-image: var(--image-village_9);
+}
+
+.village_10 {
+    background-image: var(--image-village_10);
+}
+
+.village_11 {
+    background-image: var(--image-village_11);
+}
+
+.village_12 {
+    background-image: var(--image-village_12);
+}
+
+.bonus-blue_0 {
+    background-image: var(--image-bonus-blue-0);
+}
+
+.bonus-blue_1 {
+    background-image: var(--image-bonus-blue_1);
+}
+
+.bonus-blue_2 {
+    background-image: var(--image-bonus-blue_2);
+}
+
+.bonus-blue_3 {
+    background-image: var(--image-bonus-blue_3);
+}
+
+.bonus-blue_4 {
+    background-image: var(--image-bonus-blue_4);
+}
+
+.bonus-blue_5 {
+    background-image: var(--image-bonus-blue_5);
+}
+
+.bonus-blue_6 {
+    background-image: var(--image-bonus-blue_6);
+}
+
+.bonus-blue_7 {
+    background-image: var(--image-bonus-blue_7);
+}
+
+.bonus-blue_8 {
+    background-image: var(--image-bonus-blue_8);
+}
+
+.bonus-blue_9 {
+    background-image: var(--image-bonus-blue_9);
+}
+
+.bonus-blue_10 {
+    background-image: var(--image-bonus-blue_10);
+}
+
+.bonus-blue.selected {
+    background-image: var(--image-bonus-blue-0);
+}
+
+.bonus-red_0 {
+    background-image: var(--image-bonus-red-0);
+}
+
+.bonus-red_1 {
+    background-image: var(--image-bonus-red-1);
+}
+
+.bonus-red_2 {
+    background-image: var(--image-bonus-red-2);
+}
+
+.bonus-red_3 {
+    background-image: var(--image-bonus-red-3);
+}
+
+.bonus-red_4 {
+    background-image: var(--image-bonus-red-4);
+}
+
+.bonus-red_5 {
+    background-image: var(--image-bonus-red-5);
+}
+
+.bonus-red.selected {
+    background-image: var(--image-bonus-red-0);
+}

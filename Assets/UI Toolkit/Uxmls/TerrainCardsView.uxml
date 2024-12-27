@@ -1,0 +1,29 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="CardView" src="project://database/Assets/UI%20Toolkit/Uxmls/CardView.uxml?fileID=9197481963319205126&amp;guid=ff26ee45d486ac541b6f3a87f0c6022f&amp;type=3#CardView" />
+    <engine:Template name="StatisticBarView" src="project://database/Assets/UI%20Toolkit/Uxmls/StatisticBarView.uxml?fileID=9197481963319205126&amp;guid=2d5bc0dfdec5f4b4bae9b802e68b5435&amp;type=3#StatisticBarView" />
+    <engine:Template name="VillagesView" src="project://database/Assets/UI%20Toolkit/Uxmls/VillageBarView.uxml?fileID=9197481963319205126&amp;guid=dc89793e928f83f43a2e7822b08e0c6c&amp;type=3#VillageBarView" />
+    <engine:Template name="BonusBarView" src="project://database/Assets/UI%20Toolkit/Uxmls/BonusBarView.uxml?fileID=9197481963319205126&amp;guid=2d2dbc360ff1bdf48b48b2f83697b8fe&amp;type=3#BonusBarView" />
+    <engine:VisualElement name="background" picking-mode="Ignore" class="background" />
+    <engine:VisualElement name="terrain-cards-view" picking-mode="Ignore" class="terrain-cards">
+        <engine:Instance name="card-view-1" template="CardView" picking-mode="Ignore" class="card__content" />
+        <engine:VisualElement picking-mode="Ignore" class="terrain-cards__buttons">
+            <engine:Button name="next-terrain-button" class="unity-button--next" />
+            <engine:Button name="restart-button" class="unity-button--restart">
+                <engine:VisualElement />
+            </engine:Button>
+            <engine:Button name="new-game-button" class="unity-button--new-game">
+                <engine:VisualElement />
+            </engine:Button>
+        </engine:VisualElement>
+        <engine:Instance name="card-view-2" template="CardView" picking-mode="Ignore" class="card__content" />
+    </engine:VisualElement>
+    <engine:VisualElement name="statistic-bar-view" picking-mode="Ignore" class="statistic-bar">
+        <engine:Instance template="StatisticBarView" picking-mode="Ignore" />
+    </engine:VisualElement>
+    <engine:VisualElement name="village-bar-view" picking-mode="Ignore" class="village-bar">
+        <engine:Instance template="VillagesView" picking-mode="Ignore" />
+    </engine:VisualElement>
+    <engine:VisualElement name="bonus-bar-view" picking-mode="Ignore" class="bonus-bar">
+        <engine:Instance template="BonusBarView" picking-mode="Ignore" style="flex-grow: 1;" />
+    </engine:VisualElement>
+</engine:UXML>

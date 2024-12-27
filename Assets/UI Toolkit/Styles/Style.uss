@@ -1,0 +1,23 @@
+.hide {
+    visibility: hidden;
+    display: none;
+}
+
+.anim {
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.hide.anim.transform {
+    transition-property: translate;
+    visibility: visible;
+    display: flex;
+}
+
+.hide.anim.transform--up {
+    translate: 0 -100%;
+}
+
+.hide.anim.transform--left {
+    translate: -100% 0;
+}

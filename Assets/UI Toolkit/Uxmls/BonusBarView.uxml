@@ -1,0 +1,36 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Button.uss?fileID=7433441132597879392&amp;guid=c03027d65c3df964f8a61490d6a7afef&amp;type=3#Button" />
+    <Style src="project://database/Assets/UI%20Toolkit/Styles/Container.uss?fileID=7433441132597879392&amp;guid=88a730764ee9cc8498cf6807eac50a6e&amp;type=3#Container" />
+    <engine:VisualElement picking-mode="Ignore" class="bonus-bar__content">
+        <engine:VisualElement name="bonus-bar-container" class="bonus-bar__container">
+            <engine:VisualElement picking-mode="Ignore" class="bonus">
+                <engine:VisualElement class="bonus-card anim bonus-blue bonus-blue_1" />
+                <engine:VisualElement class="bonus-card anim bonus-blue bonus-blue_2" />
+                <engine:VisualElement class="bonus-card anim bonus-blue bonus-blue_3" />
+                <engine:VisualElement class="bonus-card anim bonus-blue bonus-blue_4" />
+                <engine:VisualElement class="bonus-card anim bonus-blue bonus-blue_5" />
+            </engine:VisualElement>
+            <engine:VisualElement picking-mode="Ignore" class="bonus">
+                <engine:VisualElement class="bonus-card anim bonus-blue bonus-blue_6" />
+                <engine:VisualElement class="bonus-card anim bonus-blue bonus-blue_7" />
+                <engine:VisualElement class="bonus-card anim bonus-blue bonus-blue_8" />
+                <engine:VisualElement class="bonus-card anim bonus-blue bonus-blue_9" />
+                <engine:VisualElement class="bonus-card anim bonus-blue bonus-blue_10" />
+            </engine:VisualElement>
+            <engine:VisualElement picking-mode="Ignore" name="bonus-red-container" class="bonus">
+                <engine:VisualElement class="bonus-card anim bonus-red bonus-red_1" />
+                <engine:VisualElement class="bonus-card anim bonus-red bonus-red_2" />
+                <engine:VisualElement class="bonus-card anim bonus-red bonus-red_3" />
+                <engine:VisualElement class="bonus-card anim bonus-red bonus-red_4" />
+                <engine:VisualElement class="bonus-card anim bonus-red bonus-red_5" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:Button name="bonus-bar-button" class="unity-button--bonus-bar">
+            <engine:VisualElement picking-mode="Ignore" />
+            <engine:VisualElement picking-mode="Ignore" />
+            <engine:VisualElement picking-mode="Ignore" />
+            <engine:VisualElement picking-mode="Ignore" />
+            <engine:VisualElement picking-mode="Ignore" />
+        </engine:Button>
+    </engine:VisualElement>
+</engine:UXML>

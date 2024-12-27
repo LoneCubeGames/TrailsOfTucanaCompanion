@@ -1,0 +1,93 @@
+.unity-button {
+    color: white;
+    border-width: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    width: 256px;
+    height: 128px;
+    -unity-font-style: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.unity-button.unity-text-element {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.unity-button.unity-text-element:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.unity-button.unity-text-element:focus {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.unity-button--next {
+    background-image: var(--image-button-next);
+}
+
+.unity-button--restart {
+    background-image: var(--image-button-next-round);
+}
+
+.unity-button--new-game {
+    background-image: var(--image-button-new-game);
+}
+
+.unity-button.unity-button--statistic {
+    border-width: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.unity-button.unity-button--statistic > VisualElement {
+    background-image: var(--icon-hex-fill);
+    width: 64px;
+    height: 64px;
+    opacity: 0.25;
+}
+
+.unity-button.unity-button--village {
+    border-width: 0;
+    height: 128px;
+    width: 256px;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.unity-button.unity-button--village > VisualElement {
+    background-image: var(--icon-vilage-fill);
+    width: 128px;
+    height: 64px;
+    opacity: 0.25;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.unity-button.unity-button--bonus-bar {
+    border-width: 0;
+    height: 64px;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.unity-button.unity-button--bonus-bar > VisualElement {
+    background-image: var(--icon-bonus-fill);
+    width: 64px;
+    height: 64px;
+    opacity: 0.25;
+    -unity-background-scale-mode: scale-to-fit;
+}

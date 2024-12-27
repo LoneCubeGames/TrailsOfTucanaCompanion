@@ -1,0 +1,33 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement picking-mode="Ignore" class="statistic-bar__content">
+        <engine:Button name="statistic-bar-button" class="unity-button--statistic">
+            <engine:VisualElement picking-mode="Ignore" />
+            <engine:VisualElement picking-mode="Ignore" />
+            <engine:VisualElement picking-mode="Ignore" />
+            <engine:VisualElement picking-mode="Ignore" />
+            <engine:VisualElement picking-mode="Ignore" />
+        </engine:Button>
+        <engine:VisualElement name="statistic-bar-container" picking-mode="Ignore" class="statistic-bar__container anim transform transform--up hide">
+            <engine:VisualElement picking-mode="Ignore" class="preview">
+                <engine:VisualElement picking-mode="Ignore" class="desert-preview" />
+                <engine:Label name="desert-label" picking-mode="Ignore" />
+            </engine:VisualElement>
+            <engine:VisualElement picking-mode="Ignore" class="preview">
+                <engine:VisualElement picking-mode="Ignore" class="forest-preview" />
+                <engine:Label name="forest-label" picking-mode="Ignore" />
+            </engine:VisualElement>
+            <engine:VisualElement picking-mode="Ignore" class="preview">
+                <engine:VisualElement picking-mode="Ignore" class="mountain-preview" />
+                <engine:Label name="mountain-label" picking-mode="Ignore" />
+            </engine:VisualElement>
+            <engine:VisualElement picking-mode="Ignore" class="preview">
+                <engine:VisualElement picking-mode="Ignore" class="water-preview" />
+                <engine:Label name="water-label" picking-mode="Ignore" />
+            </engine:VisualElement>
+            <engine:VisualElement picking-mode="Ignore" class="preview">
+                <engine:VisualElement picking-mode="Ignore" class="any-preview" />
+                <engine:Label name="any-label" picking-mode="Ignore" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

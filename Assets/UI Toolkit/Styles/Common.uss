@@ -1,0 +1,53 @@
+:root {
+    --image-background: url("/Assets/Images/Resources/IM_Background.png");
+    --image-terrain-cards-none: url("/Assets/Images/Resources/IM_TerrainCards_None.png");
+    --image-terrain-cards-desert: url("/Assets/Images/Resources/IM_TerrainCards_Desert.png");
+    --image-terrain-cards-forest: url("/Assets/Images/Resources/IM_TerrainCards_Forest.png");
+    --image-terrain-cards-mountain: url("/Assets/Images/Resources/IM_TerrainCards_Mountain.png");
+    --image-terrain-cards-water: url("/Assets/Images/Resources/IM_TerrainCards_Water.png");
+    --image-terrain-cards-any: url("/Assets/Images/Resources/IM_TerrainCards_Any.png");
+    --image-button-next: url("/Assets/Images/Resources/IM_Button_Next.png");
+    --image-button-next-round: url("/Assets/Images/Resources/IM_Button_NextRound.png");
+    --image-button-new-game: url("/Assets/Images/Resources/IM_Button_NewGame.png");
+    --image-village_0: url("/Assets/Images/Resources/IM_Village_0.png");
+    --image-village_1: url("/Assets/Images/Resources/IM_Village_1.png");
+    --image-village_2: url("/Assets/Images/Resources/IM_Village_2.png");
+    --image-village_3: url("/Assets/Images/Resources/IM_Village_3.png");
+    --image-village_4: url("/Assets/Images/Resources/IM_Village_4.png");
+    --image-village_5: url("/Assets/Images/Resources/IM_Village_5.png");
+    --image-village_6: url("/Assets/Images/Resources/IM_Village_6.png");
+    --image-village_7: url("/Assets/Images/Resources/IM_Village_7.png");
+    --image-village_8: url("/Assets/Images/Resources/IM_Village_8.png");
+    --image-village_9: url("/Assets/Images/Resources/IM_Village_9.png");
+    --image-village_10: url("/Assets/Images/Resources/IM_Village_10.png");
+    --image-village_11: url("/Assets/Images/Resources/IM_Village_11.png");
+    --image-village_12: url("/Assets/Images/Resources/IM_Village_12.png");
+    --image-bonus-blue-0: url("/Assets/Images/Resources/IM_BonusBlue_0.png");
+    --image-bonus-blue_1: url("/Assets/Images/Resources/IM_BonusBlue_1.png");
+    --image-bonus-blue_2: url("/Assets/Images/Resources/IM_BonusBlue_2.png");
+    --image-bonus-blue_3: url("/Assets/Images/Resources/IM_BonusBlue_3.png");
+    --image-bonus-blue_4: url("/Assets/Images/Resources/IM_BonusBlue_4.png");
+    --image-bonus-blue_5: url("/Assets/Images/Resources/IM_BonusBlue_5.png");
+    --image-bonus-blue_6: url("/Assets/Images/Resources/IM_BonusBlue_6.png");
+    --image-bonus-blue_7: url("/Assets/Images/Resources/IM_BonusBlue_7.png");
+    --image-bonus-blue_8: url("/Assets/Images/Resources/IM_BonusBlue_8.png");
+    --image-bonus-blue_9: url("/Assets/Images/Resources/IM_BonusBlue_9.png");
+    --image-bonus-blue_10: url("/Assets/Images/Resources/IM_BonusBlue_10.png");
+    --image-bonus-red-0: url("/Assets/Images/Resources/IM_BonusRed_0.png");
+    --image-bonus-red-1: url("/Assets/Images/Resources/IM_BonusRed_1.png");
+    --image-bonus-red-2: url("/Assets/Images/Resources/IM_BonusRed_2.png");
+    --image-bonus-red-3: url("/Assets/Images/Resources/IM_BonusRed_3.png");
+    --image-bonus-red-4: url("/Assets/Images/Resources/IM_BonusRed_4.png");
+    --image-bonus-red-5: url("/Assets/Images/Resources/IM_BonusRed_5.png");
+}
+
+:root {
+    --icon-desert-preview: url("/Assets/Icons/Resources/IC_Desert-preview.png");
+    --icon-forest-preview: url("/Assets/Icons/Resources/IC_Forest-preview.png");
+    --icon-mountain-preview: url("/Assets/Icons/Resources/IC_Mountain-preview.png");
+    --icon-water-preview: url("/Assets/Icons/Resources/IC_Water-preview.png");
+    --icon-any-preview: url("/Assets/Icons/Resources/IC_Any-preview.png");
+    --icon-hex-fill: url("/Assets/Icons/Resources/IC_Hex_Fill.png");
+    --icon-vilage-fill: url("/Assets/Icons/Resources/IC_Village_Fill.png");
+    --icon-bonus-fill: url("/Assets/Icons/Resources/IC_Bonus_Fill.png");
+}
