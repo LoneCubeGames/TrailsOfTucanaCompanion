@@ -1,4 +1,8 @@
 :root {
+    --unity-font-asset: url("/Assets/Fonts/Resources/FA_Font.asset");
+}
+
+:root {
     --image-background: url("/Assets/Images/Resources/IM_Background.png");
     --image-terrain-cards-none: url("/Assets/Images/Resources/IM_TerrainCards_None.png");
     --image-terrain-cards-desert: url("/Assets/Images/Resources/IM_TerrainCards_Desert.png");
