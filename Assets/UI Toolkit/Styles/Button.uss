@@ -32,7 +32,7 @@
     background-image: var(--image-button-next);
 }
 
-.unity-button--restart {
+.unity-button--next-round {
     background-image: var(--image-button-next-round);
 }
 

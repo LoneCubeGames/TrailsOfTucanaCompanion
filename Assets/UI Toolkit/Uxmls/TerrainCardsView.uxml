@@ -8,7 +8,7 @@
         <engine:Instance name="card-view-1" template="CardView" picking-mode="Ignore" class="card__content" />
         <engine:VisualElement picking-mode="Ignore" class="terrain-cards__buttons">
             <engine:Button name="next-terrain-button" class="unity-button--next" />
-            <engine:Button name="restart-button" text="NEW&#10;ROUND" class="unity-button--restart">
+            <engine:Button name="next-round-button" text="NEW&#10;ROUND" class="unity-button--next-round">
                 <engine:VisualElement />
             </engine:Button>
             <engine:Button name="new-game-button" text="NEW&#10;GAME" class="unity-button--new-game">

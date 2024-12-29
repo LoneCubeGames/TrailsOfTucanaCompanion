@@ -18,7 +18,7 @@ namespace Presenters
             _view = new TerrainCardsView();
             _model = model;
             _view.Init(uiDocument, path);
-            _view.RestartButton.Hide();
+            _view.NextRoundButton.Hide();
             _view.NewGameButton.Hide();
 
             UpdateTerrainCardsCountsLabel();
@@ -27,10 +27,10 @@ namespace Presenters
         private void UpdateTerrainCardsCountsLabel() =>
             _view.NextTerrainButton.text = (_model.Items.Count / 2).ToString();
 
-        private void OnRestartButtonClicked()
+        private void OnNextRoundButtonClicked()
         {
             _model.CreateNewCards();
-            _view.RestartButton.Hide();
+            _view.NextRoundButton.Hide();
             _view.NewGameButton.Hide();
             _view.NextTerrainButton.Show();
 
@@ -49,7 +49,7 @@ namespace Presenters
                 case 1:
                     return;
                 case 3:
-                    _view.RestartButton.Show();
+                    _view.NextRoundButton.Show();
                     _view.NewGameButton.Show();
                     _view.NextTerrainButton.Hide();
                     break;
@@ -61,7 +61,7 @@ namespace Presenters
         public void Subscribe()
         {
             _view.NextTerrainButton.clicked += OnNextTerrainButtonClicked;
-            _view.RestartButton.clicked += OnRestartButtonClicked;
+            _view.NextRoundButton.clicked += OnNextRoundButtonClicked;
             _view.NewGameButton.clicked += OnNewGameButtonClicked;
             EventManager.TerrainCardsChangedEvent.AddListener(UpdateTerrainCardsCountsLabel);
             EventManager.TerrainCardsClearedEvent.AddListener(UpdateTerrainCardsCountsLabel);
@@ -70,7 +70,7 @@ namespace Presenters
         public void Unsubscribe()
         {
             _view.NextTerrainButton.clicked -= OnNextTerrainButtonClicked;
-            _view.RestartButton.clicked -= OnRestartButtonClicked;
+            _view.NextRoundButton.clicked -= OnNextRoundButtonClicked;
             _view.NewGameButton.clicked -= OnNewGameButtonClicked;
             EventManager.TerrainCardsChangedEvent.RemoveListener(UpdateTerrainCardsCountsLabel);
             EventManager.TerrainCardsClearedEvent.RemoveListener(UpdateTerrainCardsCountsLabel);
