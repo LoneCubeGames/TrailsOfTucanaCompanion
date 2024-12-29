@@ -24,6 +24,6 @@
         <engine:Instance template="VillagesView" picking-mode="Ignore" />
     </engine:VisualElement>
     <engine:VisualElement name="bonus-bar-view" picking-mode="Ignore" class="bonus-bar">
-        <engine:Instance template="BonusBarView" picking-mode="Ignore" style="flex-grow: 1;" />
+        <engine:Instance template="BonusBarView" picking-mode="Ignore" />
     </engine:VisualElement>
 </engine:UXML>

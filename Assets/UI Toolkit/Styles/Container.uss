@@ -81,6 +81,10 @@
     justify-content: flex-end;
 }
 
+.bonus-bar > TemplateContainer {
+    flex-grow: 1
+}
+
 .bonus {
     align-items: center;
     justify-content: center;
@@ -107,7 +111,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 
 .bonus-card.anim {
