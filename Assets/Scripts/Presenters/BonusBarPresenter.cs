@@ -5,6 +5,7 @@ using Extensions;
 using Interfaces;
 using Models;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 using Views;
 
@@ -17,11 +18,13 @@ namespace Presenters
 
         private List<VisualElement> _bonusBlueCards;
         private List<VisualElement> _bonusRedCards;
+        private readonly InputSystemActions _inputSystemActions;
         private bool _isBonusBarShown;
 
         public BonusBarPresenter(UIDocument uiDocument, string path, TerrainCardsModel model)
         {
             _view = new BonusBarView();
+            _inputSystemActions = new InputSystemActions();
             _model = model;
             _view.Init(uiDocument, path);
             _view.BonusBarContainer.Hide();
@@ -38,13 +41,22 @@ namespace Presenters
             _view.BonusBarButton.clicked += OnBonusBarButtonClicked;
             SubscribeToBlueCards();
             SubscribeToRedCards();
+
+            _inputSystemActions.Enable();
+            _inputSystemActions.UI.Bonus.performed += OnBonusKeyboardClicked;
         }
+
+        private void OnBonusKeyboardClicked(InputAction.CallbackContext _) =>
+            OnBonusBarButtonClicked();
 
         public void Unsubscribe()
         {
             _view.BonusBarButton.clicked -= OnBonusBarButtonClicked;
             UnsubscribeFromBlueCards();
             UnsubscribeFromRedCards();
+
+            _inputSystemActions.UI.Bonus.performed -= OnBonusKeyboardClicked;
+            _inputSystemActions.Disable();
         }
 
         private void InitializeBlueCards()

@@ -4,6 +4,7 @@ using Events;
 using Extensions;
 using Interfaces;
 using Models;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 using Views;
 
@@ -13,12 +14,13 @@ namespace Presenters
     {
         private readonly StatisticBarView _view;
         private readonly TerrainCardsModel _model;
-
+        private readonly InputSystemActions _inputSystemActions;
         private bool _isStatisticBarShown;
 
         public StatisticBarPresenter(UIDocument uiDocument, string path, TerrainCardsModel model)
         {
             _view = new StatisticBarView();
+            _inputSystemActions = new InputSystemActions();
             _model = model;
             _view.Init(uiDocument, path);
             _view.StatisticBarContainer.Hide();
@@ -69,11 +71,17 @@ namespace Presenters
         private void OnStatisticBarButtonClicked() =>
             _view.StatisticBarContainer.Toggle(ref _isStatisticBarShown);
 
+        private void OnStatisticBarKeyboardClicked(InputAction.CallbackContext _) =>
+            OnStatisticBarButtonClicked();
+
         public void Subscribe()
         {
             _view.StatisticBarButton.clicked += OnStatisticBarButtonClicked;
             EventManager.TerrainCardsChangedEvent.AddListener(UpdateStatisticBarLabels);
             EventManager.TerrainCardsClearedEvent.AddListener(UpdateStatisticBarLabels);
+
+            _inputSystemActions.Enable();
+            _inputSystemActions.UI.Terrain.performed += OnStatisticBarKeyboardClicked;
         }
 
         public void Unsubscribe()
@@ -81,6 +89,9 @@ namespace Presenters
             _view.StatisticBarButton.clicked -= OnStatisticBarButtonClicked;
             EventManager.TerrainCardsChangedEvent.RemoveListener(UpdateStatisticBarLabels);
             EventManager.TerrainCardsClearedEvent.RemoveListener(UpdateStatisticBarLabels);
+
+            _inputSystemActions.Disable();
+            _inputSystemActions.UI.Terrain.performed -= OnStatisticBarKeyboardClicked;
         }
     }
 }

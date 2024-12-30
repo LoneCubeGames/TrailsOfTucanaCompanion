@@ -2,6 +2,7 @@
 using Extensions;
 using Interfaces;
 using Models;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Views;
@@ -12,10 +13,12 @@ namespace Presenters
     {
         private readonly TerrainCardsView _view;
         private readonly TerrainCardsModel _model;
+        private readonly InputSystemActions _inputSystemActions;
 
         public TerrainCardsPresenter(UIDocument uiDocument, string path, TerrainCardsModel model)
         {
             _view = new TerrainCardsView();
+            _inputSystemActions = new InputSystemActions();
             _model = model;
             _view.Init(uiDocument, path);
             _view.NextRoundButton.Hide();
@@ -58,6 +61,15 @@ namespace Presenters
             EventManager.TerrainCardsChangedEvent.Invoke();
         }
 
+        private void OnNextTerrainKeyboardClicked(InputAction.CallbackContext _) =>
+            OnNextTerrainButtonClicked();
+
+        private void OnNextRoundKeyboardClicked(InputAction.CallbackContext _) =>
+            OnNextRoundButtonClicked();
+
+        private void OnNewGameKeyboardClicked(InputAction.CallbackContext _) =>
+            OnNewGameButtonClicked();
+
         public void Subscribe()
         {
             _view.NextTerrainButton.clicked += OnNextTerrainButtonClicked;
@@ -65,6 +77,11 @@ namespace Presenters
             _view.NewGameButton.clicked += OnNewGameButtonClicked;
             EventManager.TerrainCardsChangedEvent.AddListener(UpdateTerrainCardsCountsLabel);
             EventManager.TerrainCardsClearedEvent.AddListener(UpdateTerrainCardsCountsLabel);
+
+            _inputSystemActions.Enable();
+            _inputSystemActions.UI.Next.performed += OnNextTerrainKeyboardClicked;
+            _inputSystemActions.UI.NextRound.performed += OnNextRoundKeyboardClicked;
+            _inputSystemActions.UI.NewGame.performed += OnNewGameKeyboardClicked;
         }
 
         public void Unsubscribe()
@@ -74,6 +91,11 @@ namespace Presenters
             _view.NewGameButton.clicked -= OnNewGameButtonClicked;
             EventManager.TerrainCardsChangedEvent.RemoveListener(UpdateTerrainCardsCountsLabel);
             EventManager.TerrainCardsClearedEvent.RemoveListener(UpdateTerrainCardsCountsLabel);
+
+            _inputSystemActions.Disable();
+            _inputSystemActions.UI.Next.performed -= OnNextTerrainKeyboardClicked;
+            _inputSystemActions.UI.NextRound.performed -= OnNextRoundKeyboardClicked;
+            _inputSystemActions.UI.NewGame.performed -= OnNewGameKeyboardClicked;
         }
     }
 }
